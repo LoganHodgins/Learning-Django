@@ -68,3 +68,21 @@ button:active {
 .errors label {
   color: #680000;
 }
+
+.rating {
+  float: right;
+}
+
+.review li {
+  margin: 1.5rem;
+  list-style: none;
+  width: 90%;
+  max-width: 30rem;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+}
+
+.review-header {
+  padding-left: 2rem;
+}

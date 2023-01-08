@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You!</title>
+  <link rel="stylesheet" href="{% static "reviews/styles.css" %}">
 </head>
 <body>
-  <h1>Thank you!</h1>
+  <h1 class="review-header">Thank you!</h1>
+  <ul class="review">
+    {% for review in reviews %}
+      {% include "reviews/includes/review_item.html" %}
+    {% endfor %}
+  </ul>
 </body>
 </html>
